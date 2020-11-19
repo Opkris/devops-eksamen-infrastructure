@@ -1,25 +1,26 @@
 services:
-  - docker
+- docker
 env:
   global:
-    - GCP_PROJECT_ID=devops-eksamen-295808
-    - tf_version=0.12.19
-    - IMAGE=gcr.io/devops-eksamen-295808/devops-eksamen
-    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
-    - secure: 1FWu/97WhgtQAZ/a1yxkthrrNEjrCQmHhW7YxsSQ7vATx71lG+2amWJfC47is3zPKYg/EEbe1nSkIZBTlU6a86tZBpGQxFry99Kpoq3EAclQxElJ3pHx/yxi2QOGVEDUfNGrvT+Zbvi0KnGtnSVgKu6vllqVvNPZJxdPafWr9U65Yr7tvaZb+DNVB+b10s8c3In96WEmRTk102HxWaVpoD7trj/P9BXoWfqbcWjuTw2uOkxQS+IFWOjaLnH5IFe1O+S375ClVsXTGibbcXHqFKgf69uRd643F4ITY73fE/yeQj6+knO1O5yTOD8YGpsHyadbZDdEt2bp0Qj8pgrDrFdoWnBuwooPqaWUjpEjPRBH2fkXUCsOhhsY+/HLP74JD6fyjISCsaTPRI7jqbGFrcyrz5yfbTi01szPz8YxmDYJY//Qg/hueYYPDTuTnOUmqfO+Tw52H0P27SXKuWT2T4OvDNNHe+ZV/wXtSePYvJjfK3Ms3K++Eq+s0hT3NSS41dNgqOlioxpNoAZcVqKKFtleWJwxT3Ju7PHIT75nJgtIqAq+5C0yPeSWhLovWvadqA0y9JKMn77XAI5Kvx3B0AUEecxqt9d6lrKPsqI8m30Jn4HPemwHTN23nu1hHrXFkWy2qAT164za0vEDxcNc52M2ZGf6mTgQ0N8nkJi2BAQ=
-    - secure: AEO/bQQ+sq1POVVybf8oGZfDHgGPBk8efWGQYatlEBzBB3GJhPHg4yB/IPMIejKf9TsT31sw9q/aJJaHeA5d5eBWsWz8KGwAXzuDOtK4Q+pJIveIb4xlGkTshSzt3nOAae8GcqP31LezOiY1CVNBA0FmnuqMtsRTZKzfqXurcMHOCxN35OoE8zSGdhIE8s2dUdAwlpIynSU38gkt1zhuKYwylAf2XwTpwydlwT6d88Rbq+/819fHC+Xa6I8I972tMYT/mOsD5dbyPi6EtxLx9xY+8Dx45arW1AGbJA1T4LPKL6dAQ2c5/ZCgLLh1g0OEfB1/nkdm/mPAO04ycZ6h3uUYZTShCSgLB8H6VnyxpPyNvpQEP78AHG4gZYRdsoTJn9iK/7R3gTJEzHw3mdV9rtJkN3nBBHZ/G3uu33Cw49cAfnd3aEy2WgbOyE6bXZx0owVBVRalOD4HyZ3O4Tbwo93UN7KCfCyzZOpUUibUG9ylXEphEWanV5uiNCEwtfr18jgbDTC0GBWpZBKkngeSYUxvk3zC1W0nFq7anzkiFdJPrriOFEVPaxBVQqdim0JU4jvreFhiokUCu7NolzzJC1zed65E15eT/swfE6HdTYzOjxXF88LnWwY3fjnOPMzJFtfqG9Zt6dR0tepJ7htlJhvNx4n7tR7zsLBeOWoJIC4=
+  - GCP_PROJECT_ID=devops-eksamen-295808
+  - tf_version=0.12.19
+  - IMAGE=gcr.io/devops-eksamen-295808/devops-eksamen
+  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - secure: lUBxKe0VZ1C9PUKdBJ0f2NV67ioDcdzzHSlvQp0E7+YSN/EZRb/omZjoiRX8xLBQT1sNwAgbbamtIHm6MfoEuirz8lKS4ogW6tQGlqKpRoylN7k8lnJF7U2iRTOEx9+AlgJ34oVob1ms54RSYxIpkHKNzs46eqDfWniFPrS/Xmxd6HaA48USIHyHHyDWrpoV0rdygBXZyN+mgl4Rr+4NfiGX5D/sTTIG/fNdR2uW3FdpTZimeidQK8FTlpzBn1OUd2g20mO+yca28QNHAGOOXAdtleL5t5s2ib7nwRN8IZ5nwrjnFbcR0e0HJ4JMIBiaScutiEnkh/o/bEzeYPvwofk5xHrFyoYhE+1omZtpE1DJ3PakWVTbQsBRM/Gt0RFof6pttHI2uzSU0Rf5gP5c0uq1EU6l9imMwfGXMt3uETj/hE903eDo4iZx1s3BdpH/eXpV1dAtG5Cny5Q1iNgoMk7mQSa08dcjE/C0vXFgo2OoarB1iAGl2xO6Hb7xTnGndygmoBIPeVJGTddooZoXjRgoQPr3JlQajBWZWEsnXL1t6invsYD2w7u2kNvUqJZD7vjnC5PAH3AgK8H92s1em7mQWDTG66jv7KL7ZKGRG1qvXh3JDAh6ZpBQl3DyrS+rEhg6IPlO1oAjI1X+7P/92Z4zfpCJ3ghhIoImqPtM/GY=
+  - secure: oHsjNDsfW1iZX9uLCOY44x6jouNR/Z0Ji4DnHqQE4wLezPXXtEkzmLaVO+vjPIKIqHG+q6IwwE/H+YBq5XSJJTLbi7onH1r6pJr+LncT79T9Jzg7ZoibGjTZlr+Tt8LTasMjA1uhineOPMv8zz/YcdhqWLsdEhW+uOWVkt93PXpBeDwgJ1YSEdCBS6yFM9KyjqGcEDH9XWq1fl5hrmS826GRfnXI0mfy7IA5uICh3XGlJmGkRYfYgOPFcR0Lr7KOZwPNBkSPJD10zSGYnw7fL+vB+wGQJRBtL6uJOypebfbKvSiNVcY91WGHTHsNBnymX9cfOFx2tN+6ohX+X0a5M6jFMByD2hqkLZECaD54X6Ymd3DCvIAfTZOEicDbXqo63OWh/QylmRU64U73Ggm9aTmM6Nde3CgaUuJe6wTsnaWkKZ4/32ZpdHQbT8tjvVjhbhi38oMLVS/iokPuZn9fEDQNDkmJdoi4Lxp+/QcNEM9OtJCDRxkEoWgpzwcuKMr2GTRvb0P2A640vgKaPg+RcIxr2AFfYTm76g2OPAgtoDSDUWilDQStbv0xd5VPHDo0CS8SlRm1EwOri/0bDqph8rhqsOQz30CoxZvO9qh/PFyHjnW502/dSD1npEu0AMycI5CuEW7N7MtEiqEnEVax2/3k51QgwcmHgfEkMKe3t44=
+
 before_install:
-  - openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv -in GCP-key.json.enc -out GCP-key.json -d
-  - curl https://sdk.cloud.google.com | bash > /dev/null
-  - source "$HOME/google-cloud-sdk/path.bash.inc"
-  - gcloud auth activate-service-account --key-file=GCP-Key.json
-  - gcloud auth configure-docker
-  - gcloud config set project "${GCP_PROJECT_ID}"
+- openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv
+  -in GCP-key.json.enc -out GCP-key.json -d
+- curl https://sdk.cloud.google.com | bash > /dev/null
+- source "$HOME/google-cloud-sdk/path.bash.inc"
+- gcloud auth activate-service-account --key-file=GCP-Key.json
+- gcloud auth configure-docker
+- gcloud config set project "${GCP_PROJECT_ID}"
 install: true
 script:
-  - |-
-    set -ex;
-    docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
-    docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
-    set +x
-
+- |-
+  set -ex;
+  docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
+  docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
+  set +x
