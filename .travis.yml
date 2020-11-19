@@ -14,6 +14,7 @@ env:
   global:
     - GCP_PROJECT_ID=devops-eksamen-295808
     - tf_version=0.12.19
+    - IMAGE=gcr.io/devops-eksamen-295808/devops-eksamen
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 branches:
   only:
