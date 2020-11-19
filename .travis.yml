@@ -22,7 +22,6 @@ branches:
 script:
   - |-
     set -ex;
-    terraform init
-    terraform plan
-    terraform apply --auto-approve
-    terraform output
+    docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
+    docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
+    set +x
