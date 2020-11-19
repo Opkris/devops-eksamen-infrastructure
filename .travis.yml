@@ -1,27 +1,27 @@
 before_install:
-  - openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv -in GCP-key.json.enc -out GCP-key.json -d
-    - curl https://sdk.cloud.google.com | bash > /dev/null
-    - source "$HOME/google-cloud-sdk/path.bash.inc"
-    - export GOOGLE_APPLICATION_CREDENTIALS=./<key-file>.json
-    - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-    - unzip terraform_"$tf_version"_linux_amd64.zip
-    - sudo mv terraform /usr/local/bin/
-    - rm terraform_"$tf_version"_linux_amd64.zip
-    - gcloud config set project "${GCP_PROJECT_ID}"
-    - gcloud auth activate-service-account --key-file=GCP-Key.json
+- openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv
+  -in GCP-key.json.enc -out GCP-key.json -d - curl https://sdk.cloud.google.com |
+  bash > /dev/null - source "$HOME/google-cloud-sdk/path.bash.inc" - export GOOGLE_APPLICATION_CREDENTIALS=./<key-file>.json
+  - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
+  - unzip terraform_"$tf_version"_linux_amd64.zip - sudo mv terraform /usr/local/bin/
+  - rm terraform_"$tf_version"_linux_amd64.zip - gcloud config set project "${GCP_PROJECT_ID}"
+  - gcloud auth activate-service-account --key-file=GCP-Key.json
 install: true
 env:
   global:
-    - GCP_PROJECT_ID=devops-eksamen-295808
-    - tf_version=0.12.19
-    - IMAGE=gcr.io/devops-eksamen-295808/devops-eksamen
-    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - GCP_PROJECT_ID=devops-eksamen-295808
+  - tf_version=0.12.19
+  - IMAGE=gcr.io/devops-eksamen-295808/devops-eksamen
+  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - secure: 1FWu/97WhgtQAZ/a1yxkthrrNEjrCQmHhW7YxsSQ7vATx71lG+2amWJfC47is3zPKYg/EEbe1nSkIZBTlU6a86tZBpGQxFry99Kpoq3EAclQxElJ3pHx/yxi2QOGVEDUfNGrvT+Zbvi0KnGtnSVgKu6vllqVvNPZJxdPafWr9U65Yr7tvaZb+DNVB+b10s8c3In96WEmRTk102HxWaVpoD7trj/P9BXoWfqbcWjuTw2uOkxQS+IFWOjaLnH5IFe1O+S375ClVsXTGibbcXHqFKgf69uRd643F4ITY73fE/yeQj6+knO1O5yTOD8YGpsHyadbZDdEt2bp0Qj8pgrDrFdoWnBuwooPqaWUjpEjPRBH2fkXUCsOhhsY+/HLP74JD6fyjISCsaTPRI7jqbGFrcyrz5yfbTi01szPz8YxmDYJY//Qg/hueYYPDTuTnOUmqfO+Tw52H0P27SXKuWT2T4OvDNNHe+ZV/wXtSePYvJjfK3Ms3K++Eq+s0hT3NSS41dNgqOlioxpNoAZcVqKKFtleWJwxT3Ju7PHIT75nJgtIqAq+5C0yPeSWhLovWvadqA0y9JKMn77XAI5Kvx3B0AUEecxqt9d6lrKPsqI8m30Jn4HPemwHTN23nu1hHrXFkWy2qAT164za0vEDxcNc52M2ZGf6mTgQ0N8nkJi2BAQ=
+  - secure: AEO/bQQ+sq1POVVybf8oGZfDHgGPBk8efWGQYatlEBzBB3GJhPHg4yB/IPMIejKf9TsT31sw9q/aJJaHeA5d5eBWsWz8KGwAXzuDOtK4Q+pJIveIb4xlGkTshSzt3nOAae8GcqP31LezOiY1CVNBA0FmnuqMtsRTZKzfqXurcMHOCxN35OoE8zSGdhIE8s2dUdAwlpIynSU38gkt1zhuKYwylAf2XwTpwydlwT6d88Rbq+/819fHC+Xa6I8I972tMYT/mOsD5dbyPi6EtxLx9xY+8Dx45arW1AGbJA1T4LPKL6dAQ2c5/ZCgLLh1g0OEfB1/nkdm/mPAO04ycZ6h3uUYZTShCSgLB8H6VnyxpPyNvpQEP78AHG4gZYRdsoTJn9iK/7R3gTJEzHw3mdV9rtJkN3nBBHZ/G3uu33Cw49cAfnd3aEy2WgbOyE6bXZx0owVBVRalOD4HyZ3O4Tbwo93UN7KCfCyzZOpUUibUG9ylXEphEWanV5uiNCEwtfr18jgbDTC0GBWpZBKkngeSYUxvk3zC1W0nFq7anzkiFdJPrriOFEVPaxBVQqdim0JU4jvreFhiokUCu7NolzzJC1zed65E15eT/swfE6HdTYzOjxXF88LnWwY3fjnOPMzJFtfqG9Zt6dR0tepJ7htlJhvNx4n7tR7zsLBeOWoJIC4=
 branches:
   only:
-    - master
+  - master
 script:
-  - |-
-    set -ex;
-    docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
-    docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
-    set +x
+- |-
+  set -ex;
+  docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
+  docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
+  set +x
+
