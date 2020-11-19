@@ -4,13 +4,14 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv -in GCP-key.json.enc -out GCP-key.json -d
     - curl https://sdk.cloud.google.com | bash > /dev/null
     - source "$HOME/google-cloud-sdk/path.bash.inc"
-    - export GOOGLE_APPLICATION_CREDENTIALS=./<key-file>.json
-    - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-    - unzip terraform_"$tf_version"_linux_amd64.zip
-    - sudo mv terraform /usr/local/bin/
-    - rm terraform_"$tf_version"_linux_amd64.zip
     - gcloud config set project "${GCP_PROJECT_ID}"
+    - gcloud auth configure-docker
     - gcloud auth activate-service-account --key-file=GCP-Key.json
+  # - unzip terraform_"$tf_version"_linux_amd64.zip
+  # - sudo mv terraform /usr/local/bin/
+  # - rm terraform_"$tf_version"_linux_amd64.zip
+  # - export GOOGLE_APPLICATION_CREDENTIALS=./<key-file>.json
+  # - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
 install: true
 env:
   global:
