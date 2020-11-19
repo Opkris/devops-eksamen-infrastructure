@@ -5,7 +5,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/cloudrun/devops-eksamen"
+        image = "gcr.io/devops-eksamen-295808/devops-eksamen"
       }
     }
   }
