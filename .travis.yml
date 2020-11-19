@@ -17,6 +17,9 @@ before_install:
     - rm terraform_"$tf_version"_linux_amd64.zip - gcloud config set project "${GCP_PROJECT_ID}"
     - gcloud auth activate-service-account --key-file=GCP-Key.json
 install: true
+branches:
+  only:
+    - master
 script:
 - |-
   set -ex;
