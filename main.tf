@@ -1,14 +1,3 @@
-
-
-terraform {
-  backend "s3" {
-    bucket = var.bucket_id
-    key    = " ... "
-    region = "eu-north-1"
-  }
-}
-
-
 resource "google_cloud_run_service" "default" {
   name     = "cloudrun-srv"
   location = "eu-north-1"
