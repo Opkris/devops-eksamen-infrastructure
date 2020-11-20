@@ -7,5 +7,5 @@ variable "project_id" {
 }
 
 variable "bucket_id" {
-  default = "devops-eksamen-bucket"
+  default = "devops-eksamen-bucket-v1"
 }
