@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "cloudrun-srv"
+  name     = "google_cloud_opkris_v1"
   location = "eu-north-1"
 
   template {
