@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "google_cloud_opkris_v1"
+  name     = "google-cloud-42opkris42-v1"
   location = "eu-north-1"
 
   template {
