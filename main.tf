@@ -1,6 +1,7 @@
 resource "google_cloud_run_service" "default" {
   name     = "google-cloud-42opkris42-v1"
   location = "us-central1"
+  project = "devops-eksamen-295808"
 
   template {
     spec {
