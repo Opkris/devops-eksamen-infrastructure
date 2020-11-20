@@ -9,5 +9,6 @@ terraform {
 provider "google-beta" {
   credentials = "GCP-key.json"
   project = var.project_id
-  region      = "eu-north-1"
+  version = "~> 3.0.0-beta.1"
+  region = "eu-north-1"
 }
