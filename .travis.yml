@@ -24,9 +24,9 @@ before_install:
 - rm terraform_"$tf_version"_linux_amd64.zip
 install: true
 script:
-  - |-
-    set -ex;
-    terraform init
-    terraform plan
-    terraform apply --auto-approve
-    terraform output
+- |-
+  set -ex;
+  terraform init
+  terraform plan
+  terraform apply --auto-approve
+  terraform output
