@@ -24,8 +24,9 @@ before_install:
 - rm terraform_"$tf_version"_linux_amd64.zip
 install: true
 script:
-- |-
-  set -ex;
-  docker build -t "${IMAGE}:${TRAVIS_COMMIT}" . && \
-  docker push "${IMAGE}:${TRAVIS_COMMIT}" && \
-  set +x
+  - |-
+    set -ex;
+    terraform init
+    terraform plan
+    terraform apply --auto-approve
+    terraform output
