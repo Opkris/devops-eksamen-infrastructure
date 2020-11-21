@@ -13,6 +13,14 @@ resource "google_cloud_run_service" "default" {
             memory: 512
           }
         }
+        env {
+          name = "logz_token"
+          value = var.logz_token
+        }
+        env {
+          name = "logz_url"
+          value = var.logz_url
+        }
       }
     }
   }
