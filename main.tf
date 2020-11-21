@@ -7,7 +7,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/devops-eksamen-295808/devops-eksamen:e1ffae0ca235a898c7ae5ec041c3c27e00ed71c9"
+        image = "gcr.io/devops-eksamen-295808/devops-eksamen:23d1acf8452a1d2b0d255905bee95fca1235442c"
         resources {
           limits = {
             memory: 512
