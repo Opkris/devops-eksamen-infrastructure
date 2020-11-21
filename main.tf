@@ -3,10 +3,16 @@ resource "google_cloud_run_service" "default" {
   location = "us-central1"
   project = "devops-eksamen-295808"
 
+
   template {
     spec {
       containers {
         image = "gcr.io/devops-eksamen-295808/devops-eksamen:e1ffae0ca235a898c7ae5ec041c3c27e00ed71c9"
+        resources {
+          limits = {
+            memory: 512
+          }
+        }
       }
     }
   }
