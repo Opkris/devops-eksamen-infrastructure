@@ -7,7 +7,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/devops-eksamen-295808/devops-eksamen:c64c53d6b2258af7fe55ff334895381c2ad1db77"
+        image = "gcr.io/devops-eksamen-295808/devops-eksamen:90d75d6ef9266788dfcf7dade743f49c0403234d"
         resources {
           limits = {
             memory: 512
@@ -25,6 +25,7 @@ resource "google_cloud_run_service" "default" {
     }
   }
 }
+
 
 data "google_iam_policy" "noauth" {
   binding {
