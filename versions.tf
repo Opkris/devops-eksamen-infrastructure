@@ -7,7 +7,7 @@ terraform {
       source = "hashicorp/google-beta"
     }
     statuscake = {
-      surce = "terraform-providers/statuscake"
+      source = "terraform-providers/statuscake"
     }
   }
   required_version = ">= 0.13"
