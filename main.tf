@@ -14,11 +14,11 @@ resource "google_cloud_run_service" "default" {
           }
         }
         env {
-          name = "logz_token"
+          name = "LOGZ_TOKEN"
           value = var.logz_token
         }
         env {
-          name = "logz_url"
+          name = "LOGZ_URL"
           value = var.logz_url
         }
       }
