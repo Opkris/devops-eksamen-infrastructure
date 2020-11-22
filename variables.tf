@@ -1,6 +1,5 @@
 variable "logz_token" {
   description = "User token for Logz.io"
-
 }
 
 variable "logz_url" {
