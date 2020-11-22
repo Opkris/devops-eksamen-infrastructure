@@ -48,7 +48,7 @@ Verdiene for `LOGZ_TOKEN` OG `LOGZ_URL` kan du finne inne på:
 `Logz.io` -> `Send your data` -> `Libraries` -> `Java - logback appender`
 
 * Lag en "bucket" inne på Gcloud Dashbord ( under/i Storage browser) navnet skal skal legges 
-til filen `bucket_id`
+til filen `provider.tf` under terraform -> bucket 
 
 * Hvis alt har blitt gjort ordentlig skal projektet vare konfigurert med riktige hemmeligeter,
     Da trenger man kun å gjøre en push til master branch. og koden vil oppdatere infrastrukturen 
