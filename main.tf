@@ -5,9 +5,6 @@ resource "google_cloud_run_service" "default" {
 
 
   template {
-    metadata {
-      name = "google-cloud-42opkris42-v1"
-    }
     spec {
       containers {
         image = "gcr.io/devops-eksamen-295808/devops-eksamen:90d75d6ef9266788dfcf7dade743f49c0403234d"
