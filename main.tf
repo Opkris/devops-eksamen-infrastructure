@@ -10,7 +10,7 @@ resource "google_cloud_run_service" "default" {
         image = "gcr.io/devops-eksamen-295808/devops-eksamen:90d75d6ef9266788dfcf7dade743f49c0403234d"
         resources {
           limits = {
-            memory: 512
+            memory: M512
           }
         }
         env {
