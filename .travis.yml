@@ -1,34 +1,34 @@
 services:
-- docker
+  - docker
 env:
   global:
-  - GCP_PROJECT_ID=devops-eksamen-295808
-  - tf_version=0.13.2
-  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
-  - secure: PD32xNsi86Kujfo7CFAdBx2hVl4L9brrwaWzphLH/JgFgHbrK1ovMPvG2AA/vpTDVzv1gA3H+49zDObUzVkwFPFvUyUx95bQgjzImR5FVF9XL0hWvzgsJtx+zyzjBsWasSjJs1tAgfV+v3on2ZEIfJmNn8lFaIFl6ilHpZkX7GVkBqTQ3YBPYIb5m9jenESVP5n7SG8bLtjAkO/29SPH6M3PiFVNFtLu8zPN/kJ4klnk2WSh8xSuyX5jJ64HUVa80TG/zUO8BFPHNnSuNT8Yp7dU3Ko4bPAYK6yD4Jc8qiXFbsiDtLTTF7IgilGQ4vDq69ODftuhW72g/AvIf2YXYD+2s06uZrrgn+ujTIA9FSYXHO6fUKqzepNDpLRQwW6EaU95lJ7+bbuc5ogu80AoIolPLOvyktDOhfAOQY9rcyUlRmuwmi+qInP1pzx7cMU/pC5och26rZz7rBgAYLDOZokAIRM4RHYNj7ViCMRi1wFYVV2bUiJwXBPxkClSfk7kIDxDFG+uGwFrT3OcEC1hh4lk5emYzL9B8QLVjPGeTDgNLJivIb7TcBiuUQsrT4063cwCKGPsuR6B/VseWuFn1tHEnuHFSqxyTmgQFN1kxX4DB0IPoTX+a5pyCDpJb1O5q+zF0YqYQ9KuIIDNGm28FuDXEHoUfxR025tl8kklJQc=
-  - secure: c0zjqtDnYqcuHPs1De2aRHK0zc2Bx3FV/04rjQ982L8jR6uS6gw1pm18hQi9aodBo4AR4jVSWRY/tJyeaMZ4SH72OMrgVHn9qMB8ShlZpsqM8EcfY9Wm/yQJN/gSHZUtCzL3oawjR22sv1oXbK0fDINKxfUFIxIUsLcY7thMvzqjMIwlAUsobQRRBtAOekRIZF8WqPIg8Mnlb8STEMvotTWNzQpDVJQdB1Wb99OIP8cOIWzgZoIzY3o5RgcjGQF82LiOOS7GMGiqzIzQl42UR9zpwXAxxqRPqoMlu+Vhzb0PmRiWwRI8iLez5DLrWZ3HGMVeNpzYCVBFddq0s3EckxD1Yl+HwCrLBX5vu/aeO2l5eLXMKg5D8I+/Zn5Cpcm+/espFEljyeJg0Jmo6ZmhimhF8Vt7jojncIRzEscersol0Fcuq4TVDcYyEL/7y/AQ1wEL5jrezzotcTkyvFzMzmqq9w49GSSAJfvK4Fst3bsMflS3ALhWSPpKfLYJvtpSMOc+NLTc1LOwsVSHHfUHDcEa843CS6IyvbQ8M40hIiugZsUtbFTGOueRjxnb6GMTlpQHRfROfiPVDmat78wQ8Gakl7qgcwqNEnFJXf8nX7HQW8VjvznsVR6Qohjq1XedJxxMttV1z7Vgt9c92vXrm1OYUWAD19R7r6dd8xgKl50=
+    - GCP_PROJECT_ID=devops-eksamen-295808
+    - tf_version=0.13.2
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+    - secure: PD32xNsi86Kujfo7CFAdBx2hVl4L9brrwaWzphLH/JgFgHbrK1ovMPvG2AA/vpTDVzv1gA3H+49zDObUzVkwFPFvUyUx95bQgjzImR5FVF9XL0hWvzgsJtx+zyzjBsWasSjJs1tAgfV+v3on2ZEIfJmNn8lFaIFl6ilHpZkX7GVkBqTQ3YBPYIb5m9jenESVP5n7SG8bLtjAkO/29SPH6M3PiFVNFtLu8zPN/kJ4klnk2WSh8xSuyX5jJ64HUVa80TG/zUO8BFPHNnSuNT8Yp7dU3Ko4bPAYK6yD4Jc8qiXFbsiDtLTTF7IgilGQ4vDq69ODftuhW72g/AvIf2YXYD+2s06uZrrgn+ujTIA9FSYXHO6fUKqzepNDpLRQwW6EaU95lJ7+bbuc5ogu80AoIolPLOvyktDOhfAOQY9rcyUlRmuwmi+qInP1pzx7cMU/pC5och26rZz7rBgAYLDOZokAIRM4RHYNj7ViCMRi1wFYVV2bUiJwXBPxkClSfk7kIDxDFG+uGwFrT3OcEC1hh4lk5emYzL9B8QLVjPGeTDgNLJivIb7TcBiuUQsrT4063cwCKGPsuR6B/VseWuFn1tHEnuHFSqxyTmgQFN1kxX4DB0IPoTX+a5pyCDpJb1O5q+zF0YqYQ9KuIIDNGm28FuDXEHoUfxR025tl8kklJQc=
+    - secure: c0zjqtDnYqcuHPs1De2aRHK0zc2Bx3FV/04rjQ982L8jR6uS6gw1pm18hQi9aodBo4AR4jVSWRY/tJyeaMZ4SH72OMrgVHn9qMB8ShlZpsqM8EcfY9Wm/yQJN/gSHZUtCzL3oawjR22sv1oXbK0fDINKxfUFIxIUsLcY7thMvzqjMIwlAUsobQRRBtAOekRIZF8WqPIg8Mnlb8STEMvotTWNzQpDVJQdB1Wb99OIP8cOIWzgZoIzY3o5RgcjGQF82LiOOS7GMGiqzIzQl42UR9zpwXAxxqRPqoMlu+Vhzb0PmRiWwRI8iLez5DLrWZ3HGMVeNpzYCVBFddq0s3EckxD1Yl+HwCrLBX5vu/aeO2l5eLXMKg5D8I+/Zn5Cpcm+/espFEljyeJg0Jmo6ZmhimhF8Vt7jojncIRzEscersol0Fcuq4TVDcYyEL/7y/AQ1wEL5jrezzotcTkyvFzMzmqq9w49GSSAJfvK4Fst3bsMflS3ALhWSPpKfLYJvtpSMOc+NLTc1LOwsVSHHfUHDcEa843CS6IyvbQ8M40hIiugZsUtbFTGOueRjxnb6GMTlpQHRfROfiPVDmat78wQ8Gakl7qgcwqNEnFJXf8nX7HQW8VjvznsVR6Qohjq1XedJxxMttV1z7Vgt9c92vXrm1OYUWAD19R7r6dd8xgKl50=
 branches:
   only:
-  - master
+    - master
 before_install:
-- openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv
-  -in GCP-key.json.enc -out GCP-key.json -d
-- curl https://sdk.cloud.google.com | bash > /dev/null
-- source "$HOME/google-cloud-sdk/path.bash.inc"
-- gcloud auth activate-service-account --key-file=GCP-key.json
-- gcloud config set project "${GCP_PROJECT_ID}"
-- export GOOGLE_APPLICATION_CREDENTIALS=./GCP-key.json
-- wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-- unzip terraform_"$tf_version"_linux_amd64.zip
-- sudo mv terraform /usr/local/bin/
-- rm terraform_"$tf_version"_linux_amd64.zip
+  - openssl aes-256-cbc -K $encrypted_08046dc9db46_key -iv $encrypted_08046dc9db46_iv
+    -in GCP-key.json.enc -out GCP-key.json -d
+  - curl https://sdk.cloud.google.com | bash > /dev/null
+  - source "$HOME/google-cloud-sdk/path.bash.inc"
+  - gcloud auth activate-service-account --key-file=GCP-key.json
+  - gcloud config set project "${GCP_PROJECT_ID}"
+  - export GOOGLE_APPLICATION_CREDENTIALS=./GCP-key.json
+  - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
+  - unzip terraform_"$tf_version"_linux_amd64.zip
+  - sudo mv terraform /usr/local/bin/
+  - rm terraform_"$tf_version"_linux_amd64.zip
 install: true
 script:
-- |-
-  set -ex;
-  export TF_VAR_logz_token=$LOGZ_TOKEN
-  export TF_VAR_logz_url=$LOGZ_URL
-  terraform init
-  terraform plan
-  terraform apply --auto-approve
-  terraform output
+  - |-
+    set -ex;
+    export TF_VAR_logz_token=$LOGZ_TOKEN
+    export TF_VAR_logz_url=$LOGZ_URL
+    terraform init
+    terraform plan
+    terraform apply --auto-approve
+    terraform output
