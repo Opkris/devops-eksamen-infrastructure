@@ -19,7 +19,7 @@ prosjektet.
     - _Cloud Run Service Agent._
  
 * Last med nøkkelfil for service account(en) og denne skal legges under/i root filen i prosjektet og 
-    gi filen navnet:
+    gi filen navnet: 
      
           
     GCP-key.json
