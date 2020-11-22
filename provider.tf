@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "devops-eksamen-bucket"
+    bucket = "devops-eksamen-bucket-v1"
     prefix = "terraformstate"
     credentials = "GCP-key.json"
   }
